@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Pixel Art Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pastel Pixel Art Generator</h1>
+        <div class="controls">
+            <button id="generateBtn" class="btn">Generate New Art</button>
+            <button id="clearBtn" class="btn secondary">Clear Grid</button>
+            <div class="grid-size-controls">
+                <label for="gridSize">Grid Size:</label>
+                <select id="gridSize">
+                    <option value="20">20x20</option>
+                    <option value="30" selected>30x30</option>
+                    <option value="40">40x40</option>
+                    <option value="50">50x50</option>
+                </select>
+            </div>
+            <div class="pattern-controls">
+                <label for="pattern">Pattern:</label>
+                <select id="pattern">
+                    <option value="random">Random</option>
+                    <option value="clusters">Color Clusters</option>
+                    <option value="gradient">Gradient Flow</option>
+                    <option value="geometric">Geometric</option>
+                    <option value="organic">Organic Shapes</option>
+                </select>
+            </div>
+        </div>
+        <div id="pixelGrid" class="pixel-grid"></div>
+        <div class="color-palette">
+            <h3>Pastel Color Palette</h3>
+            <div class="colors" id="colorPalette"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
